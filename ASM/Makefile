@@ -13,7 +13,7 @@ OBJS = $(SRCS:.s=.o)
 %.o: %.s
 	nasm -f elf64 $< -o $@
 
-all: $(NAME_3) #$(NAME_1) $(NAME_2)
+all: $(NAME_3) $(NAME_1) $(NAME_2)
 
 $(NAME_1) : $(OBJS)
 	gcc $(CFLAGS) -no-pie -o $(NAME_1) Colleen.o
