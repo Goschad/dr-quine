@@ -10,7 +10,7 @@ SRC =		Colleen.c \
 
 OBJS = ${SRC:.c=.o}
 
-all: $(NAME_3)
+all: $(NAME_3) $(NAME_2) $(NAME_1)
 
 $(NAME_3): $(OBJS)
 	clang $(CFLAGS) Colleen.o -o $(NAME_1)
